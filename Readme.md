@@ -1,12 +1,21 @@
-# React + Vite
+# Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple password generator built with React and Tailwind CSS. This application allows users to generate random passwords based on specified criteria: length, inclusion of numbers, and inclusion of special characters. Users can easily copy the generated password to their clipboard.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Customizable Length:** Set the desired password length using a slider.
+* **Include Numbers:** Option to include numerical digits in the password.
+* **Include Special Characters:** Option to include special symbols in the password.
+* **Instant Generation:** Passwords are automatically generated as you adjust the settings.
+* **Copy to Clipboard:** Easily copy the generated password with a single click.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+* **React:** A JavaScript library for building user interfaces.
+* **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+* **`useRef` Hook:** Used for direct DOM manipulation (e.g., selecting the password input for copying).
+* **`useCallback` Hook:** Optimizes performance by memoizing functions.
+* **`useEffect` Hook:** Manages side effects, such as generating the password when dependencies change.
+
